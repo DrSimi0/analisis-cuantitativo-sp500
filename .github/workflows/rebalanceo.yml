@@ -1,0 +1,62 @@
+name: Rebalanceo automatico
+
+on:
+  schedule:
+    # GitHub usa UTC. Dos horarios cubren invierno (EST) y verano (EDT) para ~10:00 NY;
+    # el script verifica que sea el primer dia habil del mes y la hora, y no repite un periodo ya ejecutado.
+    - cron: "0 14 1-7 * *"
+    - cron: "0 15 1-7 * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "auto = respeta el calendario | forzar = senal nueva y rebalanceo hoy"
+        type: choice
+        options: [auto, forzar]
+        default: auto
+      dry_run:
+        description: "Solo simular (no envia ordenes)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebalanceo
+  cancel-in-progress: false
+
+jobs:
+  rebalanceo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: trading/requirements.txt
+
+      - name: Instalar dependencias
+        run: pip install -r trading/requirements.txt
+
+      - name: Ejecutar estrategia
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_PAPER: ${{ vars.ALPACA_PAPER || 'true' }}
+          TRADING_ACTIVO: ${{ vars.TRADING_ACTIVO || 'false' }}
+        run: |
+          python trading/ejecutar.py --modo "${{ inputs.modo || 'auto' }}" ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Guardar historial en el repo
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trading/historial
+          if ! git diff --cached --quiet; then
+            git commit -m "Historial de trading $(date -u +%Y-%m-%d)"
+            git push
+          fi
