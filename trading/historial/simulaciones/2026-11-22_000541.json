@@ -1,0 +1,12 @@
+{
+  "inicio": "2026-11-22T00:05:41.149261Z",
+  "modo": "auto",
+  "simulacion": true,
+  "paper": true,
+  "ordenes": [],
+  "eventos": [
+    "ERROR: Faltan ALPACA_API_KEY / ALPACA_SECRET_KEY (archivo .env local o GitHub Secrets)"
+  ],
+  "resultado": "error",
+  "error": "Faltan ALPACA_API_KEY / ALPACA_SECRET_KEY (archivo .env local o GitHub Secrets)\nTraceback (most recent call last):\n  File \"/home/runner/work/analisis-cuantitativo-sp500/analisis-cuantitativo-sp500/trading/ejecutar.py\", line 68, in main\n    b = Broker()\n        ^^^^^^^^\n  File \"/home/runner/work/analisis-cuantitativo-sp500/analisis-cuantitativo-sp500/trading/broker.py\", line 29, in __init__\n    raise RuntimeError(\"Faltan ALPACA_API_KEY / ALPACA_SECRET_KEY (archivo .env local o GitHub Secrets)\")\nRuntimeError: Faltan ALPACA_API_KEY / ALPACA_SECRET_KEY (archivo .env local o GitHub Secrets)\n"
+}
