@@ -1,0 +1,816 @@
+{
+  "parametros": {
+    "capital": 100000,
+    "ventana_dias": 1260,
+    "rf_modelo": 0.04,
+    "costo_pb": 10.0,
+    "inicio": "2006-11-20",
+    "fin": "2026-11-20",
+    "frecuencia_principal": "Objetivo",
+    "tope_peso": 1.0,
+    "banda": 0.0
+  },
+  "metricas": {
+    "Estrategia (Top 5 Max Sharpe)": {
+      "Valor final": 1235618.055862783,
+      "Retorno total": 11.36851851155033,
+      "CAGR": 0.1348719029955805,
+      "Volatilidad anual": 0.24194201901344506,
+      "Sharpe": 0.5816396437627235,
+      "Sortino": 0.8221337688547952,
+      "Max Drawdown": -0.629717293026623,
+      "Calmar": 0.2141784964286798,
+      "Duración máx. DD (días)": 1198.0,
+      "VaR 95% diario": -0.02296346464727089,
+      "CVaR 95% diario": -0.03636737634108353,
+      "Asimetría": -0.12065534561858493,
+      "Curtosis": 8.54528749079494,
+      "% meses positivos": 0.6218487394957983,
+      "Mejor año": 0.7254181425544426,
+      "Peor año": -0.3972058394804896,
+      "Beta vs SPY": 0.9246965557804357,
+      "Alfa anual (CAPM)": 0.046565086183342146,
+      "Correlación vs SPY": 0.747646663680784,
+      "Tracking error": 0.16134671746328888,
+      "Information ratio": 0.24107787832464067,
+      "Captura alcista": 0.9319957579050999,
+      "Captura bajista": 0.6613503447205915,
+      "% meses que vence a SPY": 0.5084033613445378
+    },
+    "Top 5 Equiponderado": {
+      "Valor final": 1374493.3680859327,
+      "Retorno total": 12.75869237323256,
+      "CAGR": 0.14096897121458363,
+      "Volatilidad anual": 0.2274870292564,
+      "Sharpe": 0.6272740622885454,
+      "Sortino": 0.8862393789600698,
+      "Max Drawdown": -0.6236024966939286,
+      "Calmar": 0.22605581594355426,
+      "Duración máx. DD (días)": 1303.0,
+      "VaR 95% diario": -0.021356840318944546,
+      "CVaR 95% diario": -0.03438618296101977,
+      "Asimetría": -0.13889145575633818,
+      "Curtosis": 10.143515358556474,
+      "% meses positivos": 0.6218487394957983,
+      "Mejor año": 0.6571664568454862,
+      "Peor año": -0.41327133485414536,
+      "Beta vs SPY": 0.8904615765020909,
+      "Alfa anual (CAPM)": 0.05202335483156042,
+      "Correlación vs SPY": 0.7657270681078302,
+      "Tracking error": 0.14787211624290003,
+      "Information ratio": 0.2763829413863888,
+      "Captura alcista": 0.90319090751975,
+      "Captura bajista": 0.595613076233421,
+      "% meses que vence a SPY": 0.5378151260504201
+    },
+    "Universo Equiponderado": {
+      "Valor final": 1470794.3271011675,
+      "Retorno total": 13.722665936948625,
+      "CAGR": 0.1448621814569393,
+      "Volatilidad anual": 0.20178922124880797,
+      "Sharpe": 0.696747979605557,
+      "Sortino": 0.9816384370509935,
+      "Max Drawdown": -0.5139377072037616,
+      "Calmar": 0.28186719796277876,
+      "Duración máx. DD (días)": 882.0,
+      "VaR 95% diario": -0.018746338529291896,
+      "CVaR 95% diario": -0.030854355470985653,
+      "Asimetría": -0.2870916191173489,
+      "Curtosis": 11.203182342391345,
+      "% meses positivos": 0.6554621848739496,
+      "Mejor año": 0.5009380489288449,
+      "Peor año": -0.3391159480054875,
+      "Beta vs SPY": 0.9967290964142617,
+      "Alfa anual (CAPM)": 0.03910891527159467,
+      "Correlación vs SPY": 0.9662129842922309,
+      "Tracking error": 0.05201416904318962,
+      "Information ratio": 0.7454862402454872,
+      "Captura alcista": 1.0890450208071738,
+      "Captura bajista": 0.9084628653299648,
+      "% meses que vence a SPY": 0.6134453781512605
+    },
+    "SPY (S&P 500)": {
+      "Valor final": 699430.2586277719,
+      "Retorno total": 5.994302586277719,
+      "CAGR": 0.10279088729945829,
+      "Volatilidad anual": 0.19561742811656574,
+      "Sharpe": 0.5205325513201696,
+      "Sortino": 0.7313376441066636,
+      "Max Drawdown": -0.55189434544454,
+      "Calmar": 0.1862510245809137,
+      "Duración máx. DD (días)": 1771.0,
+      "VaR 95% diario": -0.018102594662527248,
+      "CVaR 95% diario": -0.03009107384339627,
+      "Asimetría": -0.011155519319812648,
+      "Curtosis": 14.529633219119821,
+      "% meses positivos": 0.6512605042016807,
+      "Mejor año": 0.3230776825913697,
+      "Peor año": -0.36794989970408065,
+      "Beta vs SPY": 1.0,
+      "Alfa anual (CAPM)": 1.7759231585312563e-16,
+      "Correlación vs SPY": 1.0,
+      "Tracking error": 1.5373147166585306e-15,
+      "Information ratio": null,
+      "Captura alcista": 1.0,
+      "Captura bajista": 0.9999999999999998,
+      "% meses que vence a SPY": 0.18067226890756302
+    }
+  },
+  "frecuencias": {
+    "Objetivo": {
+      "Valor final": 1235618.055862783,
+      "Retorno total": 11.36851851155033,
+      "CAGR": 0.1348719029955805,
+      "Volatilidad anual": 0.24194201901344506,
+      "Sharpe": 0.5816396437627235,
+      "Sortino": 0.8221337688547952,
+      "Max Drawdown": -0.629717293026623,
+      "Calmar": 0.2141784964286798,
+      "Duración máx. DD (días)": 1198.0,
+      "VaR 95% diario": -0.02296346464727089,
+      "CVaR 95% diario": -0.03636737634108353,
+      "Asimetría": -0.12065534561858493,
+      "Curtosis": 8.54528749079494,
+      "% meses positivos": 0.6218487394957983,
+      "Mejor año": 0.7254181425544426,
+      "Peor año": -0.3972058394804896,
+      "Beta vs SPY": 0.9246965557804357,
+      "Alfa anual (CAPM)": 0.046565086183342146,
+      "Correlación vs SPY": 0.747646663680784,
+      "Tracking error": 0.16134671746328888,
+      "Information ratio": 0.24107787832464067,
+      "Captura alcista": 0.9319957579050999,
+      "Captura bajista": 0.6613503447205915,
+      "% meses que vence a SPY": 0.5084033613445378,
+      "Costos totales": 15432.845077206493,
+      "Operaciones": 239.0,
+      "Rotación anual promedio": 0.9561426279815207
+    }
+  },
+  "precision": {
+    "periodos": 34,
+    "ret_esperado_promedio": 0.4127163446176332,
+    "ret_real_promedio": 5.822025458692751,
+    "ret_real_mediana": 0.16730695706464926,
+    "sesgo_ret (real - esperado)": 5.409309114075119,
+    "corr_esperado_real": 0.09273162062418377,
+    "vol_esperada_promedio": 0.21927251992370125,
+    "vol_real_promedio": 0.2198662224257997,
+    "corr_vol_esperada_real": 0.2364558958690014,
+    "%_periodos_positivos": 0.7352941176470589,
+    "%_periodos_vence_spy": 0.6764705882352942,
+    "IC_promedio_score": -0.004003505936052349,
+    "IC_t_stat": -0.09800482840731022,
+    "%_periodos_IC_positivo": 0.5294117647058824,
+    "spread_decil_promedio (top-fondo, por periodo)": -0.05703699786042171,
+    "%_periodos_ret_real_dentro_de_esperado±1vol": 0.3235294117647059
+  },
+  "rolling": {
+    "%_ventanas_1a_vence_spy": 0.5744949494949495,
+    "%_ventanas_3a_vence_spy": 0.7269303201506592,
+    "%_ventanas_1a_negativas": 0.2316919191919192
+  },
+  "optimizaciones_sin_converger": 0,
+  "variante": {
+    "tope": 1.0,
+    "rf_dinamica": false,
+    "filtro_sma200": false,
+    "universo_historico": false,
+    "eventos": 34,
+    "pasos_a_efectivo": 0,
+    "termometro": "",
+    "categoria": "",
+    "rebalanceo": "objetivo",
+    "max_dias": 252,
+    "motivos": {
+      "objetivo": 29,
+      "tiempo": 4,
+      "inicio": 1
+    },
+    "sesiones_entre_eventos_mediana": 150.0,
+    "sesiones_entre_eventos_promedio": 150.93939393939394,
+    "%_tiempo_en_efectivo": 0.0,
+    "exposicion_promedio": 1.0
+  },
+  "montecarlo_bootstrap": {
+    "Estrategia": {
+      "valor_final_p5": 239561.32495689296,
+      "valor_final_p25": 659825.5968190862,
+      "valor_final_mediana": 1282979.035389931,
+      "valor_final_p75": 2532334.206546303,
+      "valor_final_p95": 6571848.664072699,
+      "cagr_p5": 0.04465006290952526,
+      "cagr_mediana": 0.1360853981363952,
+      "cagr_p95": 0.2327765869759788,
+      "mdd_mediana": -0.4703999580565935,
+      "mdd_p5 (peor 5%)": -0.6788712685115001,
+      "prob_perder_capital": 0.0066,
+      "prob_duplicar": 0.9646,
+      "prob_mdd_peor_50%": 0.388
+    },
+    "SPY": {
+      "valor_final_p5": 216343.11661042544,
+      "valor_final_p25": 464064.42613477516,
+      "valor_final_mediana": 784503.7774432596,
+      "valor_final_p75": 1293539.1468421298,
+      "valor_final_p95": 2655416.302997625,
+      "cagr_p5": 0.03933883241108638,
+      "cagr_mediana": 0.10848481557902667,
+      "cagr_p95": 0.1781663911084718,
+      "mdd_mediana": -0.3938474877966083,
+      "mdd_p5 (peor 5%)": -0.5954438909134312,
+      "prob_perder_capital": 0.0062,
+      "prob_duplicar": 0.958,
+      "prob_mdd_peor_50%": 0.1772
+    },
+    "prob_estrategia_supera_spy (bootstrap pareado)": 0.7614
+  },
+  "montecarlo_aleatorio": {
+    "simulaciones": 1000,
+    "cagr_estrategia": 0.13494604783522268,
+    "sharpe_estrategia": 0.5815967293878019,
+    "cagr_aleatorio_mediana": 0.12713567230525602,
+    "cagr_aleatorio_p5": 0.06435132696156969,
+    "cagr_aleatorio_p95": 0.18930353497887295,
+    "sharpe_aleatorio_mediana": 0.5336130190861406,
+    "percentil_cagr_estrategia": 0.581,
+    "percentil_sharpe_estrategia": 0.653,
+    "p_valor_cagr": 0.419,
+    "p_valor_sharpe": 0.347
+  },
+  "portafolio_actual": {
+    "top": [
+      "CAH",
+      "TRGP",
+      "HWM",
+      "TRV",
+      "LLY"
+    ],
+    "pesos": [
+      0.39101569867360625,
+      0.18514297783201014,
+      0.17032328578656702,
+      0.035967197695044514,
+      0.2175508400127721
+    ],
+    "ret_esperado": 0.4018873230416512,
+    "vol_esperada": 0.18681813592295832,
+    "sharpe_esperado": 1.9371102342595339,
+    "inicio_historia": "2016-11-01",
+    "metricas_compra_y_mantener": {
+      "Valor final": 1127992.5035374025,
+      "Retorno total": 10.29121625162565,
+      "CAGR": 0.2727512843396991,
+      "Volatilidad anual": 0.22743949067248997,
+      "Sharpe": 1.071799139334386,
+      "Sortino": 1.539738032722424,
+      "Max Drawdown": -0.41628689573676203,
+      "Calmar": 0.6552002648485306,
+      "Duración máx. DD (días)": 1021,
+      "VaR 95% diario": -0.020506062538843673,
+      "CVaR 95% diario": -0.03268546651856101,
+      "Asimetría": -0.48977608334668704,
+      "Curtosis": 9.158221688825247,
+      "% meses positivos": 0.5666666666666667,
+      "Mejor año": 0.5190519242999958,
+      "Peor año": -0.11069196774131451,
+      "Beta vs SPY": 0.8509747703797134,
+      "Alfa anual (CAPM)": 0.1363761257035166,
+      "Correlación vs SPY": 0.6759481785979042,
+      "Tracking error": 0.16975481125426967,
+      "Information ratio": 0.6926027076898068,
+      "Captura alcista": 1.096720647825086,
+      "Captura bajista": 0.3915815483151458,
+      "% meses que vence a SPY": 0.575
+    }
+  },
+  "acciones_mas_frecuentes": {
+    "MCD": 9,
+    "CHD": 9,
+    "BKNG": 9,
+    "EW": 7,
+    "LLY": 6,
+    "MNST": 5,
+    "ORLY": 5,
+    "COR": 5,
+    "COST": 5,
+    "HRL": 4,
+    "MO": 4,
+    "LMT": 4,
+    "NVDA": 4,
+    "CTAS": 4,
+    "RSG": 4
+  },
+  "anuales": {
+    "Estrategia": {
+      "2007": 0.0474417461402703,
+      "2008": -0.3972058394804896,
+      "2009": 0.0028985808201420493,
+      "2010": 0.7254181425544426,
+      "2011": -0.003086991454274046,
+      "2012": 0.20916817187971848,
+      "2013": 0.4007074664290058,
+      "2014": 0.15694975227797126,
+      "2015": 0.19191922322847366,
+      "2016": 0.04152977971109206,
+      "2017": 0.372605745219708,
+      "2018": -0.13102682536670762,
+      "2019": 0.183239602352401,
+      "2020": 0.2187430152351011,
+      "2021": 0.49116578195408,
+      "2022": -0.16710429382666625,
+      "2023": 0.34685232073343597,
+      "2024": 0.303969186116019,
+      "2025": 0.23607029667651802,
+      "2026": 0.006604608922800237
+    },
+    "SPY": {
+      "2007": 0.05332199059358156,
+      "2008": -0.36794989970408065,
+      "2009": 0.26351778529826153,
+      "2010": 0.1505611738540915,
+      "2011": 0.018950311133398845,
+      "2012": 0.15990316814404193,
+      "2013": 0.3230776825913697,
+      "2014": 0.1346378551846008,
+      "2015": 0.012342940485844833,
+      "2016": 0.11997861882447691,
+      "2017": 0.2170541995009907,
+      "2018": -0.045689754575374164,
+      "2019": 0.31223805340147703,
+      "2020": 0.18331653929580582,
+      "2021": 0.287287711851935,
+      "2022": -0.18175380112599426,
+      "2023": 0.2617580088990741,
+      "2024": 0.2488647620714759,
+      "2025": 0.17719051276439712,
+      "2026": 0.019471336248965798
+    }
+  },
+  "log_operaciones": [
+    {
+      "senal": "2006-12-29",
+      "ejecucion": "2007-01-03",
+      "valor": 100000.0,
+      "costo": 99.75287590813637,
+      "rotacion": 0.9975287590813636,
+      "acciones": {
+        "MNST": 15282,
+        "CTSH": 1239,
+        "EQT": 686,
+        "OXY": 778,
+        "WRB": 3442
+      }
+    },
+    {
+      "senal": "2007-04-05",
+      "ejecucion": "2007-04-09",
+      "valor": 107908.48540535689,
+      "costo": 107.44215211200715,
+      "rotacion": 0.9956784372276382,
+      "acciones": {
+        "MNST": 11898,
+        "EQT": 1247,
+        "SPG": 628,
+        "CTSH": 1069,
+        "EXC": 509
+      }
+    },
+    {
+      "senal": "2008-02-20",
+      "ejecucion": "2008-02-21",
+      "valor": 105915.21541074273,
+      "costo": 142.89628873562813,
+      "rotacion": 1.349157325333018,
+      "acciones": {
+        "MNST": 9932,
+        "EQT": 616,
+        "EIX": 1332,
+        "ISRG": 495,
+        "CCI": 1039
+      }
+    },
+    {
+      "senal": "2009-02-20",
+      "ejecucion": "2009-02-23",
+      "valor": 55408.957538571856,
+      "costo": 110.53217579412461,
+      "rotacion": 1.9948430850224859,
+      "acciones": {
+        "MCD": 468,
+        "CHD": 1038,
+        "BAX": 454,
+        "GILD": 1185
+      }
+    },
+    {
+      "senal": "2009-05-04",
+      "ejecucion": "2009-05-05",
+      "valor": 53374.12845468358,
+      "costo": 98.07571528673172,
+      "rotacion": 1.8375141314017198,
+      "acciones": {
+        "ILMN": 447,
+        "MNST": 8344,
+        "AAPL": 4661,
+        "CHD": 395
+      }
+    },
+    {
+      "senal": "2009-10-21",
+      "ejecucion": "2009-10-22",
+      "valor": 64139.662129550576,
+      "costo": 33.20936725020409,
+      "rotacion": 0.5177664825101065,
+      "acciones": {
+        "ILMN": 489,
+        "AAPL": 2804,
+        "MNST": 7727,
+        "BKNG": 2170
+      }
+    },
+    {
+      "senal": "2010-04-26",
+      "ejecucion": "2010-04-27",
+      "valor": 75762.33540523126,
+      "costo": 74.63408328425885,
+      "rotacion": 0.9851080076275669,
+      "acciones": {
+        "MCD": 238,
+        "BKNG": 2055,
+        "EW": 1571,
+        "AAPL": 2180,
+        "NFLX": 8987
+      }
+    },
+    {
+      "senal": "2010-09-22",
+      "ejecucion": "2010-09-23",
+      "valor": 95834.34368414641,
+      "costo": 78.70010042762756,
+      "rotacion": 0.8212097814016405,
+      "acciones": {
+        "MCD": 428,
+        "BKNG": 2659,
+        "EW": 2699,
+        "CHD": 748
+      }
+    },
+    {
+      "senal": "2010-12-17",
+      "ejecucion": "2010-12-20",
+      "valor": 112035.34839515651,
+      "costo": 62.85098061132431,
+      "rotacion": 0.5609924145515619,
+      "acciones": {
+        "BKNG": 2463,
+        "EW": 3470,
+        "MCD": 69,
+        "NFLX": 8081
+      }
+    },
+    {
+      "senal": "2011-06-03",
+      "ejecucion": "2011-06-06",
+      "valor": 132347.54451826605,
+      "costo": 49.31899723911285,
+      "rotacion": 0.3726476181982058,
+      "acciones": {
+        "MCD": 247,
+        "EW": 3053,
+        "BKNG": 1765,
+        "NFLX": 6745,
+        "CHD": 932
+      }
+    },
+    {
+      "senal": "2011-12-12",
+      "ejecucion": "2011-12-13",
+      "valor": 106245.90081516765,
+      "costo": 61.01659576821327,
+      "rotacion": 0.574295999187411,
+      "acciones": {
+        "MCD": 281,
+        "BKNG": 1761,
+        "CHD": 470,
+        "EW": 1690,
+        "DLTR": 693
+      }
+    },
+    {
+      "senal": "2012-04-05",
+      "ejecucion": "2012-04-09",
+      "valor": 134290.98230230436,
+      "costo": 103.55736088180542,
+      "rotacion": 0.7711415845383122,
+      "acciones": {
+        "BKNG": 1641,
+        "MCD": 54,
+        "EW": 2567,
+        "CHD": 853,
+        "ROST": 1306
+      }
+    },
+    {
+      "senal": "2012-06-12",
+      "ejecucion": "2012-06-13",
+      "valor": 138821.51280101878,
+      "costo": 12.99616674232483,
+      "rotacion": 0.09361781528020817,
+      "acciones": {
+        "EW": 2920,
+        "BKNG": 1511,
+        "ROST": 1324,
+        "CHD": 882
+      }
+    },
+    {
+      "senal": "2013-03-22",
+      "ejecucion": "2013-03-25",
+      "valor": 138374.7753445628,
+      "costo": 230.2105234603882,
+      "rotacion": 1.6636740539390071,
+      "acciones": {
+        "TSCO": 4437,
+        "DLTR": 939,
+        "CHD": 937,
+        "HSY": 407,
+        "ORLY": 1081
+      }
+    },
+    {
+      "senal": "2013-10-24",
+      "ejecucion": "2013-10-25",
+      "valor": 172806.18342974514,
+      "costo": 257.90527562332153,
+      "rotacion": 1.4924539764989004,
+      "acciones": {
+        "BKNG": 1254,
+        "HRL": 2116,
+        "TSCO": 2845,
+        "BIIB": 129,
+        "ORLY": 2338
+      }
+    },
+    {
+      "senal": "2014-10-27",
+      "ejecucion": "2014-10-28",
+      "valor": 200922.4635072606,
+      "costo": 289.3958205709458,
+      "rotacion": 1.4403358167091558,
+      "acciones": {
+        "MO": 3381,
+        "NI": 3074,
+        "BIIB": 120,
+        "HRL": 909,
+        "SHW": 529
+      }
+    },
+    {
+      "senal": "2015-03-02",
+      "ejecucion": "2015-03-03",
+      "valor": 239601.36457029404,
+      "costo": 177.38463594722748,
+      "rotacion": 0.7403323276783197,
+      "acciones": {
+        "MO": 3461,
+        "BIIB": 100,
+        "HRL": 1175,
+        "ORLY": 3635,
+        "COR": 390
+      }
+    },
+    {
+      "senal": "2015-11-25",
+      "ejecucion": "2015-11-27",
+      "valor": 252895.22079063725,
+      "costo": 211.4259415550232,
+      "rotacion": 0.8360218943404036,
+      "acciones": {
+        "MO": 2029,
+        "LMT": 318,
+        "HRL": 891,
+        "ORLY": 3799,
+        "KR": 1605
+      }
+    },
+    {
+      "senal": "2016-07-08",
+      "ejecucion": "2016-07-11",
+      "valor": 275812.1859668573,
+      "costo": 296.2200137138367,
+      "rotacion": 1.0739917552063187,
+      "acciones": {
+        "MO": 1878,
+        "LMT": 385,
+        "NI": 2683,
+        "STZ": 319,
+        "HD": 385
+      }
+    },
+    {
+      "senal": "2017-07-11",
+      "ejecucion": "2017-07-12",
+      "valor": 309537.0154284088,
+      "costo": 459.6789488134384,
+      "rotacion": 1.4850532437202333,
+      "acciones": {
+        "NOC": 365,
+        "LMT": 352,
+        "NVDA": 17479,
+        "FISV": 221,
+        "CTAS": 2192
+      }
+    },
+    {
+      "senal": "2018-01-04",
+      "ejecucion": "2018-01-05",
+      "valor": 378883.5424513856,
+      "costo": 164.71751960277558,
+      "rotacion": 0.434744456138288,
+      "acciones": {
+        "NOC": 311,
+        "LMT": 383,
+        "NVDA": 13685,
+        "CTAS": 1294,
+        "STZ": 393
+      }
+    },
+    {
+      "senal": "2018-08-07",
+      "ejecucion": "2018-08-08",
+      "valor": 400261.1165737903,
+      "costo": 499.0469396438599,
+      "rotacion": 1.2468034464993,
+      "acciones": {
+        "NVDA": 16960,
+        "CTAS": 3094,
+        "RSG": 789,
+        "UNH": 404
+      }
+    },
+    {
+      "senal": "2019-06-05",
+      "ejecucion": "2019-06-06",
+      "valor": 373833.5199928775,
+      "costo": 594.5143172988892,
+      "rotacion": 1.590318378379275,
+      "acciones": {
+        "WM": 994,
+        "PGR": 1814,
+        "CME": 481,
+        "CTAS": 1414
+      }
+    },
+    {
+      "senal": "2020-02-14",
+      "ejecucion": "2020-02-18",
+      "valor": 420642.82288678613,
+      "costo": 839.7677611846924,
+      "rotacion": 1.9963915119757352,
+      "acciones": {
+        "RSG": 747,
+        "NEE": 2646,
+        "BRO": 2130,
+        "MSFT": 547
+      }
+    },
+    {
+      "senal": "2021-01-25",
+      "ejecucion": "2021-01-26",
+      "valor": 473256.8954776674,
+      "costo": 944.6650262298584,
+      "rotacion": 1.9960935281806926,
+      "acciones": {
+        "VEEV": 427,
+        "AMD": 1034,
+        "SNPS": 223,
+        "CDNS": 295,
+        "ODFL": 1488
+      }
+    },
+    {
+      "senal": "2021-08-30",
+      "ejecucion": "2021-08-31",
+      "valor": 588557.7299484684,
+      "costo": 883.8196844024658,
+      "rotacion": 1.5016703365358048,
+      "acciones": {
+        "DHR": 568,
+        "COST": 296,
+        "FTNT": 2456,
+        "ODFL": 1034
+      }
+    },
+    {
+      "senal": "2022-04-06",
+      "ejecucion": "2022-04-07",
+      "valor": 618277.2502544447,
+      "costo": 571.6603805236816,
+      "rotacion": 0.924601997386159,
+      "acciones": {
+        "COST": 294,
+        "MSFT": 9,
+        "DG": 555,
+        "LLY": 537,
+        "FTNT": 2388
+      }
+    },
+    {
+      "senal": "2023-04-11",
+      "ejecucion": "2023-04-12",
+      "valor": 606173.2621728668,
+      "costo": 769.1216557312011,
+      "rotacion": 1.2688148813661548,
+      "acciones": {
+        "LLY": 638,
+        "CDNS": 785,
+        "HSY": 684,
+        "PGR": 166,
+        "COST": 58
+      }
+    },
+    {
+      "senal": "2023-08-08",
+      "ejecucion": "2023-08-09",
+      "valor": 695203.670413973,
+      "costo": 727.8049854564667,
+      "rotacion": 1.0468946244531196,
+      "acciones": {
+        "LLY": 533,
+        "SMCI": 5307,
+        "CDNS": 248,
+        "PWR": 792,
+        "MCK": 146
+      }
+    },
+    {
+      "senal": "2024-01-24",
+      "ejecucion": "2024-01-25",
+      "valor": 880443.7524388795,
+      "costo": 627.4686858825684,
+      "rotacion": 0.7126732220479097,
+      "acciones": {
+        "SMCI": 4665,
+        "LLY": 443,
+        "MCK": 444,
+        "COST": 254
+      }
+    },
+    {
+      "senal": "2024-02-14",
+      "ejecucion": "2024-02-15",
+      "valor": 1203325.3418588168,
+      "costo": 465.8940444869995,
+      "rotacion": 0.3871721373101953,
+      "acciones": {
+        "SMCI": 3388,
+        "LLY": 609,
+        "COR": 477,
+        "COST": 233,
+        "MCK": 263
+      }
+    },
+    {
+      "senal": "2024-11-08",
+      "ejecucion": "2024-11-11",
+      "valor": 1073575.5717605737,
+      "costo": 1131.326831954956,
+      "rotacion": 1.0537933814008782,
+      "acciones": {
+        "LLY": 420,
+        "PGR": 926,
+        "NVDA": 2020,
+        "MCK": 348
+      }
+    },
+    {
+      "senal": "2025-11-04",
+      "ejecucion": "2025-11-05",
+      "valor": 1255234.9207061394,
+      "costo": 2505.7239195098878,
+      "rotacion": 1.996219096661427,
+      "acciones": {
+        "COR": 1270,
+        "HWM": 1973,
+        "CAH": 639,
+        "RSG": 161,
+        "ORLY": 2564
+      }
+    },
+    {
+      "senal": "2026-10-20",
+      "ejecucion": "2026-10-21",
+      "valor": 1272885.7294920327,
+      "costo": 1750.1093055725098,
+      "rotacion": 1.3749147036717282,
+      "acciones": {
+        "CAH": 1738,
+        "HWM": 1112,
+        "TRGP": 187,
+        "ABBV": 865,
+        "MPC": 620
+      }
+    }
+  ]
+}

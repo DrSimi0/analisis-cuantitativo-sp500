@@ -1,0 +1,160 @@
+Objetivo: 50 eventos -> {'objetivo': 19, 'filtro': 15, 'reentrada': 15, 'inicio': 1}
+                         Estrategia (Top 5 Max Sharpe)  Top 5 Equiponderado  Universo Equiponderado  SPY (S&P 500)
+Valor final                               757,496.1027         854,469.3464            778,952.5417   699,430.2586
+Retorno total                                   6.5825               7.5532                  6.7973         5.9943
+CAGR                                            0.1073               0.1140                  0.1088         0.1028
+Volatilidad anual                               0.1675               0.2229                  0.2028         0.1956
+Sharpe                                          0.6019               0.5281                  0.5363         0.5205
+Sortino                                         0.8419               0.7418                  0.7496         0.7313
+Max Drawdown                                   -0.3459              -0.6138                 -0.5495        -0.5519
+Calmar                                          0.3101               0.1858                  0.1981         0.1863
+Duración máx. DD (días)                       925.0000           1,358.0000              1,189.0000     1,771.0000
+VaR 95% diario                                 -0.0170              -0.0206                 -0.0191        -0.0181
+CVaR 95% diario                                -0.0261              -0.0343                 -0.0312        -0.0301
+Asimetría                                      -0.4401              -0.1665                 -0.3306        -0.0112
+Curtosis                                        4.9317               9.1575                 10.8951        14.5296
+% meses positivos                               0.6597               0.6303                  0.6471         0.6513
+Mejor año                                       0.4301               0.5614                  0.3777         0.3231
+Peor año                                       -0.2470              -0.5240                 -0.3601        -0.3679
+Beta vs SPY                                     0.3744               0.9176                  0.9952         1.0000
+Alfa anual (CAPM)                               0.0627               0.0243                  0.0075         0.0000
+Correlación vs SPY                              0.4373               0.8054                  0.9597         1.0000
+Tracking error                                  0.1941               0.1331                  0.0570         0.0000
+Information ratio                              -0.0052               0.1193                  0.1223            NaN
+Captura alcista                                 0.6370               0.8876                  1.0299         1.0000
+Captura bajista                                 0.3693               0.7090                  1.0078         1.0000
+% meses que vence a SPY                         0.4874               0.4958                  0.5210         0.1807
+
+Por frecuencia:
+                            Objetivo
+CAGR                         0.1073
+Sharpe                       0.6019
+Max Drawdown                -0.3459
+Alfa anual (CAPM)            0.0627
+Costos totales          19,680.4768
+Rotación anual promedio      1.2895
+
+== precision ==
+{
+ "periodos": 35,
+ "ret_esperado_promedio": 0.3889539661684607,
+ "ret_real_promedio": 0.15577520148879842,
+ "ret_real_mediana": 0.14836864994200094,
+ "sesgo_ret (real - esperado)": -0.23317876467966223,
+ "corr_esperado_real": -0.22536325269769786,
+ "vol_esperada_promedio": 0.20726768166767287,
+ "vol_real_promedio": 0.160396897112617,
+ "corr_vol_esperada_real": 0.4936868756126656,
+ "%_periodos_positivos": 0.6857142857142857,
+ "%_periodos_vence_spy": 0.5714285714285714,
+ "IC_promedio_score": 0.04007298174942072,
+ "IC_t_stat": 1.072493751228398,
+ "%_periodos_IC_positivo": 0.6,
+ "spread_decil_promedio (top-fondo, por periodo)": 0.002699511463434513,
+ "%_periodos_ret_real_dentro_de_esperado±1vol": 0.4
+}
+
+== rolling ==
+{
+ "%_ventanas_1a_vence_spy": 0.43665824915824913,
+ "%_ventanas_3a_vence_spy": 0.3378060263653484,
+ "%_ventanas_1a_negativas": 0.2382154882154882
+}
+
+== montecarlo_bootstrap ==
+{
+ "Estrategia": {
+  "valor_final_p5": 253097.75663823404,
+  "valor_final_p25": 499712.666201543,
+  "valor_final_mediana": 802128.5443725348,
+  "valor_final_p75": 1275818.0484421216,
+  "valor_final_p95": 2389644.1299958215,
+  "cagr_p5": 0.04752504038401944,
+  "cagr_mediana": 0.10971689616771374,
+  "cagr_p95": 0.17197044152561072,
+  "mdd_mediana": -0.3248896610727393,
+  "mdd_p5 (peor 5%)": -0.48897016074087407,
+  "prob_perder_capital": 0.0012,
+  "prob_duplicar": 0.9762,
+  "prob_mdd_peor_50%": 0.041
+ },
+ "SPY": {
+  "valor_final_p5": 216343.11661042544,
+  "valor_final_p25": 464064.42613477516,
+  "valor_final_mediana": 784503.7774432596,
+  "valor_final_p75": 1293539.1468421298,
+  "valor_final_p95": 2655416.302997625,
+  "cagr_p5": 0.03933883241108638,
+  "cagr_mediana": 0.10848481557902667,
+  "cagr_p95": 0.1781663911084718,
+  "mdd_mediana": -0.3938474877966083,
+  "mdd_p5 (peor 5%)": -0.5954438909134312,
+  "prob_perder_capital": 0.0062,
+  "prob_duplicar": 0.958,
+  "prob_mdd_peor_50%": 0.1772
+ },
+ "prob_estrategia_supera_spy (bootstrap pareado)": 0.5136
+}
+
+== montecarlo_aleatorio ==
+{
+ "simulaciones": 1000,
+ "cagr_estrategia": 0.1073507797599953,
+ "sharpe_estrategia": 0.6019217066559834,
+ "cagr_aleatorio_mediana": 0.07594875480256102,
+ "cagr_aleatorio_p5": 0.031012345175444832,
+ "cagr_aleatorio_p95": 0.1252986939045998,
+ "sharpe_aleatorio_mediana": 0.4090517447618937,
+ "percentil_cagr_estrategia": 0.848,
+ "percentil_sharpe_estrategia": 0.89,
+ "p_valor_cagr": 0.152,
+ "p_valor_sharpe": 0.11
+}
+
+== portafolio_actual ==
+{
+ "top": [
+  "CAH",
+  "TRGP",
+  "HWM",
+  "LLY",
+  "TRV"
+ ],
+ "pesos": [
+  0.3915179548463514,
+  0.18528757426238854,
+  0.170640691917944,
+  0.21781315580249394,
+  0.034740623170822306
+ ],
+ "ret_esperado": 0.40210917362041465,
+ "vol_esperada": 0.18693283939647934,
+ "sharpe_esperado": 1.9305819812676217,
+ "inicio_historia": "2016-11-01",
+ "metricas_compra_y_mantener": {
+  "Valor final": 1128882.9796491226,
+  "Retorno total": 10.300129926417643,
+  "CAGR": 0.27285121784617616,
+  "Volatilidad anual": 0.2275464749529121,
+  "Sharpe": 1.0717482377322047,
+  "Sortino": 1.539718015868794,
+  "Max Drawdown": -0.4163883340259271,
+  "Calmar": 0.6552806492152746,
+  "Duración máx. DD (días)": 1021,
+  "VaR 95% diario": -0.020514478701803007,
+  "CVaR 95% diario": -0.032701571916205104,
+  "Asimetría": -0.48902554678260046,
+  "Curtosis": 9.15124739597601,
+  "% meses positivos": 0.5666666666666667,
+  "Mejor año": 0.5192267762800722,
+  "Peor año": -0.11074664837685377,
+  "Beta vs SPY": 0.8511358251606204,
+  "Alfa anual (CAPM)": 0.13645889090541122,
+  "Correlación vs SPY": 0.6757582618972569,
+  "Tracking error": 0.16986718155310693,
+  "Information ratio": 0.692751403624135,
+  "Captura alcista": 1.0971747067749953,
+  "Captura bajista": 0.39174911456105244,
+  "% meses que vence a SPY": 0.575
+ }
+}
